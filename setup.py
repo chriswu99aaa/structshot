@@ -4,8 +4,8 @@ setup(
     name="structshot",
     packages=find_packages(),
     install_requires=[
-        "pytorch-lightning~=0.8.5",
-        "transformers~=3.3.1",
+        "pytorch-lightning~=2.1.2",
+        "transformers~=4.35.2",
         "seqeval",
     ],
 )
