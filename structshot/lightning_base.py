@@ -351,7 +351,7 @@ def generic_train(
     # add custom checkpoints
     if checkpoint_callback is None:
         checkpoint_callback = pl.callbacks.ModelCheckpoint(
-            fiepath=args.output_dir,prefix="checkpoint",monitor="val_loss", mode="min", save_top_k=1
+            filepath=args.output_dir,prefix="checkpoint",monitor="val_loss", mode="min", save_top_k=1
         )
     if logging_callback is None:
         logging_callback = LoggingCallback()
